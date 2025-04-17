@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo">Weather</a>
+        <div class="search">
+            <input type="text" id="search-input">
+            <button id="search-btn">Найти</button>
+        </div>
+    </header>
+    <div class="content">
+        <div class="sidebar"> <!--Боковая панель с картинками-->
+            <img data-src="Лагос" src="./src/Lagos.jpg" alt="" class="city-btn">
+            <img data-src="Мельбурн" src="./src/Melbourne.jpg" alt="" class="city-btn">
+            <img data-src="Москва" src="./src/Moscow.jpg" alt="" class="city-btn">
+            <img data-src="Чикаго" src="./src/Сhikago.jpg" alt="" class="city-btn">
+        </div>
+        <div class="main">
+            <h2><span id="city-name"></span></h2>
+            <div class="card"> <!--Контейнер для данных о погоде-->
+
+            </div>
+            <div id="map" class="map"> <!--Контейнер для карты-->
+                    
+            </div>
+        </div>
+    </div>
+    <!--Подключаем сторонний скрипт от яндекса-->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8b947c34-afb2-44d8-b610-da8972b2976c&lang=ru_RU" type="text/javascript">
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+<!--openweathermap.org-->
